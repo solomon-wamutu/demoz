@@ -1,0 +1,55 @@
+h1, h3, h4,.tabl{
+  font-family: "Lucida Handwriting", cursive;
+  color: darkolivegreen;
+}
+
+h1 {
+  font-variant:small-caps;
+}
+
+.table {
+  display: table;
+  border-spacing: 10px 4px;
+}
+
+.row {
+  display: table-row;
+}
+
+.row > * {
+  display: table-cell;
+}
+
+.row > :first-child{
+  text-align: right;
+}
+
+body{
+  display: flex;
+  align-items: flex-start;
+  background-color: oldlace;
+}
+
+img {
+   margin: 20px 0 0 20px;
+}
+
+#error, #mtg, #mtgs{
+  display: none;
+}
+
+#error {
+
+  color: red;
+  margin-bottom: 20px;
+}
+
+#mtg,.tabl{
+  color: indigo;
+}
+
+.tabl{
+  position: absolute;
+  top: 300px ;
+  left: 250px;
+}

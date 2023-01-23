@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bookregstry.css">
+  <link rel="icon" href="/bookregstry/pro.png">
+</head>
+<body>
+  
+<div>
+
+  <h1>Book Club Organiser</h1>
+  <h4>
+    <q>High culture and pretentious litrature at its finest</q>
+  </h4>
+
+  <form action="" class="table" id="myform">
+
+    <div class="row">
+      <label for="author">Author:</label>
+      <input type="text" id = "author" size="35" required>
+    </div>
+    <div class="row">
+      <label for="title">Book title:</label>
+      <input type="text" id = "title" size="35" required>
+    </div>
+    <div class="row">
+      <label for="date">Meeting date:</label>
+      <input type="date" id="date" required>
+    </div>
+
+     
+  <div class="tabl"  id = "mtgs">
+    <label for="sort">Sort by:
+    </label>
+    <select name="sort" id="sort" onchange="SortBook(this.form);">
+  
+      <option value=""></option>
+      <option value="date">Date</option>
+      <option value="author">Author</option>
+      <option value="title">Title</option>
+    </select>
+  </div>
+  </form>
+
+  <br>
+  <div id = "error">You must enter values for all the fields</div>
+  <input type="button" value="Add a new meeting" form = "myform" onclick = "addMtg(this.form);">
+
+  <!-- <div class="table">
+  <div class="row"> -->
+ 
+
+<!-- </div>
+</div> -->
+  <br>
+
+  <h3 id = "mtg">Meeting Schedule:</h3>
+
+ 
+
+
+<!-- <input type = "button" onclick="Sort(this.form);"> -->
+<!-- onchange="Sort(this.form);"  -->
+
+  <div class="table" id="list"></div>
+
+  
+</div>
+  <img src="/bookregstry/pro.png" alt="" width="200" height="153" >
+
+  <!-- <div class="row"> -->
+
+   
+  <!-- </div> -->
+
+
+ <script src="bookregstry.js"></script>
+</body>
+</html>
